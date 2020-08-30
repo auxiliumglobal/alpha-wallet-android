@@ -16,6 +16,7 @@ import android.os.Handler;
 import android.preference.PreferenceManager;
 import android.support.annotation.NonNull;
 import android.support.annotation.Nullable;
+import android.support.v4.BuildConfig;
 import android.support.v4.app.Fragment;
 import android.support.v4.content.ContextCompat;
 import android.support.v7.widget.Toolbar;
@@ -23,6 +24,7 @@ import android.text.Editable;
 import android.text.TextWatcher;
 import android.util.Log;
 import android.view.LayoutInflater;
+import android.view.MenuInflater;
 import android.view.MenuItem;
 import android.view.View;
 import android.view.ViewGroup;
@@ -42,7 +44,6 @@ import android.widget.RelativeLayout;
 import android.widget.TextView;
 import android.widget.Toast;
 
-import com.alphawallet.app.BuildConfig;
 import com.alphawallet.app.C;
 import com.alphawallet.app.R;
 import com.alphawallet.app.entity.CryptoFunctions;
@@ -74,6 +75,7 @@ import com.alphawallet.app.util.BalanceUtils;
 import com.alphawallet.app.util.DappBrowserUtils;
 import com.alphawallet.app.util.Hex;
 import com.alphawallet.app.util.KeyboardUtils;
+import com.alphawallet.app.util.LocaleUtils;
 import com.alphawallet.app.util.QRParser;
 import com.alphawallet.app.util.Utils;
 import com.alphawallet.app.viewmodel.DappBrowserViewModel;
@@ -214,6 +216,7 @@ public class DappBrowserFragment extends Fragment implements OnSignTransactionLi
 
     @Override
     public void onCreate(@Nullable Bundle savedInstanceState) {
+        LocaleUtils.setActiveLocale(getContext());
         super.onCreate(savedInstanceState);
     }
 
@@ -237,6 +240,7 @@ public class DappBrowserFragment extends Fragment implements OnSignTransactionLi
     @Override
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
         AndroidSupportInjection.inject(this);
+        LocaleUtils.setActiveLocale(getContext());
         int webViewID = CustomViewSettings.minimiseBrowserURLBar() ? R.layout.fragment_webview_compact : R.layout.fragment_webview;
         View view = inflater.inflate(webViewID, container, false);
         initViewModel();
@@ -488,18 +492,22 @@ public class DappBrowserFragment extends Fragment implements OnSignTransactionLi
         urlTv = view.findViewById(R.id.url_tv);
         swipeRefreshLayout = view.findViewById(R.id.swipe_refresh);
         swipeRefreshLayout.setRefreshInterface(this);
+
         toolbar = view.findViewById(R.id.address_bar);
+        //If you are wondering about the strange way the menus are inflated - this is required to ensure
+        //that the menu text gets created with the correct localisation under every circumstance
+        MenuInflater inflater = new MenuInflater(LocaleUtils.getActiveLocaleContext(getContext()));
         if (CustomViewSettings.minimiseBrowserURLBar())
         {
-            toolbar.inflateMenu(R.menu.menu_scan);
+            inflater.inflate(R.menu.menu_scan, toolbar.getMenu());
         }
         else if (EthereumNetworkRepository.defaultDapp() != null)
         {
-            toolbar.inflateMenu(R.menu.menu_defaultdapp);
+            inflater.inflate(R.menu.menu_defaultdapp, toolbar.getMenu());
         }
         else
         {
-            toolbar.inflateMenu(R.menu.menu_bookmarks);
+            inflater.inflate(R.menu.menu_bookmarks, toolbar.getMenu());
         }
         refresh = view.findViewById(R.id.refresh);
         setupMenu(view);

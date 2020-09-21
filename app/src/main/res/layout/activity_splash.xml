@@ -17,23 +17,24 @@
             android:id="@+id/splash_image"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:background="@drawable/ic_logo"
+            android:background="@drawable/ic_aux_icon"
             android:gravity="center_horizontal"/>
 
         <TextView
             android:layout_marginTop="9dp"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:textSize="26sp"
-            android:textColor="@color/text_black"
+            android:textSize="20sp"
+            android:fontFamily="sans-serif-thin"
+            android:textColor="@color/aux_primary"
             android:gravity="center_horizontal"
-            android:text="@string/welcome_to_alphawallet"/>
+            android:text="@string/app_name"/>
 
     </LinearLayout>
 
     <LinearLayout
         android:id="@+id/layout_new_wallet"
-        android:visibility="gone"
+        android:visibility="visible"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
@@ -45,10 +46,10 @@
             android:id="@+id/button_create"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:background="@color/nasty_green"
-            android:layout_marginBottom="@dimen/create_new_wallet_margin_bottom"
+            android:background="@drawable/background_round_blue_9dp"
+            android:backgroundTint="@color/aux_primary"
+            android:foreground="?android:attr/selectableItemBackground"
             android:text="@string/create_a_new_wallet"
-            android:elevation="2dp"
             android:textStyle="normal"
             android:textColor="@color/white"
             android:textSize="16sp"
@@ -58,39 +59,41 @@
             android:layout_width="match_parent"
             android:layout_height="2dp"
             android:layout_marginTop="@dimen/divider_margin_top"
-            android:layout_marginStart="16dp"
-            android:layout_marginEnd="16dp"
+            android:layout_marginBottom="@dimen/divider_margin_top"
+            android:layout_marginStart="160dp"
+            android:layout_marginEnd="160dp"
             android:background="@color/grey_bar"/>
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginTop="@dimen/already_label_margin_top"
             android:text="@string/already_have_a_wallet"
             android:textColor="@color/text_dark_gray"
             android:textSize="16sp"
-            android:layout_gravity="center_horizontal"/>
+            android:layout_gravity="center_horizontal"
+            android:visibility="gone"/>
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="horizontal"
             android:layout_gravity="center_horizontal"
-            android:layout_marginTop="16dp"
+            android:layout_marginTop="0dp"
             android:layout_marginBottom="@dimen/bottom_buttons_holder_margin_bottom">
 
             <Button
                 android:id="@+id/button_watch"
+                android:visibility="gone"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="@string/watch"
                 android:layout_weight="1.0"
                 android:background="@drawable/background_white_button"
-                android:elevation="2dp"
+                android:foreground="?android:attr/selectableItemBackground"
                 android:layout_marginEnd="4dp"
                 android:padding="2dp"
                 android:textAllCaps="true"
-                android:textColor="@color/tealish"/>
+                android:textColor="@color/aux_primary"/>
 
             <Button
                 android:id="@+id/button_import"
@@ -99,11 +102,11 @@
                 android:text="@string/action_import"
                 android:layout_weight="1.0"
                 android:background="@drawable/background_white_button"
-                android:elevation="2dp"
+                android:foreground="?android:attr/selectableItemBackground"
                 android:layout_marginStart="4dp"
                 android:padding="2dp"
                 android:textAllCaps="true"
-                android:textColor="@color/tealish"/>
+                android:textColor="@color/aux_primary"/>
 
         </LinearLayout>
     </LinearLayout>

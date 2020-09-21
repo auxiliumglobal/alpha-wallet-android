@@ -430,7 +430,7 @@
     <string name="contains_no_value">La transacción DApp no contiene valor.</string>
     <string name="wallet_not_backed_up">¡No has hecho una copia de seguridad de tu monedero!</string>
     <string name="not_backed_up_detail">Todavía no has hecho una copia de seguridad de tu monedero. Tienes 200 USD netos. Hazlo ahora.</string>
-    <string name="back_up_wallet_action">HACER COPIA DE SEGURIDAD DEL MONEDERO %1$s →</string>
+    <string name="back_up_wallet_action">Hacer copia de seguridad del monedero</string>
     <string name="authentication_cancelled">Autenticación cancelada</string>
     <string name="authentication_failed">Error de autenticación</string>
     <string name="backup_seed_phrase">Haz una copia de seguridad de tu monedero con la frase semilla</string>
@@ -480,7 +480,7 @@
     <string name="password_6_characters_or_more">La contraseña debe tener 6 caracteres o más</string>
     <string name="create_a_new_wallet">Crear un monedero nuevo</string>
     <string name="watch">OBSERVAR</string>
-    <string name="already_have_a_wallet">Ya tengo un monedero:</string>
+    <string name="already_have_a_wallet">Ya tengo un monedero</string>
     <string name="watch_wallet">Monederos de solo observación</string>
     <string name="suggestion_address">Introduce la dirección de Ethereum</string>
     <string name="ethereum_address_hint">Dirección de Ethereum: 0x después 40 caracteres de 0–9 a-f A-F</string>

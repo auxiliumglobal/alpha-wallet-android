@@ -480,7 +480,7 @@
     <string name="password_6_characters_or_more">密码为 6 个字符或以上</string>
     <string name="create_a_new_wallet">创建新钱包</string>
     <string name="watch">查看</string>
-    <string name="already_have_a_wallet">我已经有一个钱包：</string>
+    <string name="already_have_a_wallet">我已经有一个钱包</string>
     <string name="watch_wallet">只能查看的钱包</string>
     <string name="suggestion_address">输入以大太坊地址</string>
     <string name="ethereum_address_hint">以太坊地址：0x 后面跟着 40 个字符（范围为 0–9、a-f、A-F）</string>

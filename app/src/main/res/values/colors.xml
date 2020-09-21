@@ -5,7 +5,7 @@
 	<color name="colorAccent">#54C1E3</color>
 	<color name="colorPrimaryLight">#AA54C1E3</color>
 	<color name="colorTheme">#FFFFFF</color>
-	<color name="colorHighlight">@color/azure</color>
+	<color name="colorHighlight">@color/aux_primary</color>
 
 	<color name="secondary_text">#40000000</color>
 	<color name="toolbar_text_color">@color/black</color>
@@ -150,4 +150,6 @@
 	<color name="grey_8d">#8d8d8d</color>
     <color name="greyf3">#f3f4f5</color>
 	<color name="logo_grey">#F2F4F7</color>
+	<color name="aux_primary">#34385F</color>
+	<color name="aux_secondary">#8ED947</color>
 </resources>

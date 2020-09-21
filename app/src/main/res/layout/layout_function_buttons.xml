@@ -48,7 +48,9 @@
             android:layout_marginLeft="4dp"
             android:layout_marginRight="4dp"
             android:layout_weight="0.5"
-            android:background="@drawable/selector_round_button"
+            android:background="@drawable/background_round_blue_9dp"
+            android:backgroundTint="@color/aux_primary"
+            android:foreground="?android:attr/selectableItemBackground"
             android:ellipsize="end"
             android:fontFamily="@font/font_semibold"
             android:lines="1"
@@ -73,7 +75,7 @@
             android:lines="1"
             android:text="Secondary"
             android:textAllCaps="false"
-            android:textColor="@drawable/selector_button_text_secondary"
+            android:textColor="@color/aux_primary"
             android:textSize="17sp"
             android:visibility="gone" />
 

@@ -56,23 +56,22 @@
 
         <Button
             android:id="@+id/dialog_button1"
-            style="@style/Widget.AppCompat.Button.Borderless.Colored"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_below="@id/dialog_view"
-            android:layout_centerHorizontal="true"
-            android:layout_gravity="center_horizontal"
-            android:layout_marginTop="20dp"
-            android:background="@drawable/selector_settings_item_reverse"
-            android:fontFamily="@font/font_regular"
-            android:paddingLeft="20dp"
-            android:paddingTop="10dp"
-            android:paddingRight="20dp"
-            android:paddingBottom="10dp"
-            android:textAllCaps="false"
-            android:textColor="@color/white"
-            android:textSize="20sp"
-            android:visibility="gone" />
+        android:visibility="gone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/dialog_view"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/background_round_blue_9dp"
+        android:backgroundTint="@color/aux_primary"
+        android:foreground="?android:attr/selectableItemBackground"
+        android:fontFamily="@font/font_semibold"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="20dp"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:textAllCaps="false"
+        android:textColor="@color/button_text_color"
+        android:textSize="16sp" />
 
         <Button
             android:id="@+id/dialog_button2"
@@ -83,11 +82,10 @@
             android:background="@color/white"
             android:fontFamily="@font/font_regular"
             android:paddingLeft="20dp"
-            android:paddingTop="10dp"
             android:paddingRight="20dp"
             android:textAllCaps="false"
-            android:textColor="@color/cancel_red"
-            android:textSize="20sp"
+            android:textColor="@color/aux_primary"
+            android:textSize="16sp"
             android:visibility="gone" />
 
         <ProgressBar

@@ -63,57 +63,57 @@ public class AdvancedSettingsActivity extends BaseActivity {
     }
 
     private void initializeSettings() {
-        console = new SettingsItemView.Builder(this)
-                .withIcon(R.drawable.ic_settings_console)
-                .withTitle(R.string.title_console)
-                .withListener(this::onConsoleClicked)
-                .build();
+//        console = new SettingsItemView.Builder(this)
+//                .withIcon(R.drawable.ic_settings_console)
+//                .withTitle(R.string.title_console)
+//                .withListener(this::onConsoleClicked)
+//                .build();
 
-        clearBrowserCache = new SettingsItemView.Builder(this)
-                .withIcon(R.drawable.ic_settings_cache)
-                .withTitle(R.string.title_clear_browser_cache)
-                .withListener(this::onClearBrowserCacheClicked)
-                .build();
-
-        tokenScript = new SettingsItemView.Builder(this)
-                .withIcon(R.drawable.ic_settings_tokenscript)
-                .withTitle(R.string.title_tokenscript)
-                .withListener(this::onTokenScriptClicked)
-                .build();
+//        clearBrowserCache = new SettingsItemView.Builder(this)
+//                .withIcon(R.drawable.ic_settings_cache)
+//                .withTitle(R.string.title_clear_browser_cache)
+//                .withListener(this::onClearBrowserCacheClicked)
+//                .build();
+//
+//        tokenScript = new SettingsItemView.Builder(this)
+//                .withIcon(R.drawable.ic_settings_tokenscript)
+//                .withTitle(R.string.title_tokenscript)
+//                .withListener(this::onTokenScriptClicked)
+//                .build();
 
         changeLanguage = new SettingsItemView.Builder(this)
-                .withIcon(R.drawable.ic_settings_language)
+                .withIcon(R.drawable.ic_baseline_translate_24)
                 .withTitle(R.string.title_change_language)
                 .withListener(this::onChangeLanguageClicked)
                 .build();
 
         changeCurrency = new SettingsItemView.Builder(this)
-                .withIcon(R.drawable.ic_currency)
+                .withIcon(R.drawable.ic_baseline_attach_money_24)
                 .withTitle(R.string.settings_locale_currency)
                 .withListener(this::onChangeCurrencyClicked)
                 .build();
 
         //TODO Change Icon
-        tokenScriptManagement = new SettingsItemView.Builder(this)
-                .withIcon(R.drawable.ic_settings_tokenscript_manage)
-                .withTitle(R.string.tokenscript_management)
-                .withListener(this::onTokenScriptManagementClicked)
-                .build();
+//        tokenScriptManagement = new SettingsItemView.Builder(this)
+//                .withIcon(R.drawable.ic_settings_tokenscript_manage)
+//                .withTitle(R.string.tokenscript_management)
+//                .withListener(this::onTokenScriptManagementClicked)
+//                .build();
 
         changeLanguage.setSubtitle(LocaleUtils.getDisplayLanguage(viewModel.getDefaultLocale(), viewModel.getDefaultLocale()));
     }
 
     private void addSettingsToLayout() {
         LinearLayout advancedSettingsLayout = findViewById(R.id.layout);
-        advancedSettingsLayout.addView(console);
-        advancedSettingsLayout.addView(clearBrowserCache);
+        //advancedSettingsLayout.addView(console);
+        //advancedSettingsLayout.addView(clearBrowserCache);
 
-        if (!checkWritePermission() && EthereumNetworkRepository.extraChains() == null)
-            advancedSettingsLayout.addView(tokenScript);
+//        if (!checkWritePermission() && EthereumNetworkRepository.extraChains() == null)
+//            advancedSettingsLayout.addView(tokenScript);
 
         advancedSettingsLayout.addView(changeLanguage);
         advancedSettingsLayout.addView(changeCurrency);
-        advancedSettingsLayout.addView(tokenScriptManagement);
+        //advancedSettingsLayout.addView(tokenScriptManagement);
     }
 
     private void onConsoleClicked() {

@@ -167,12 +167,12 @@ public class NewSettingsFragment extends BaseFragment {
 //                        .withListener(this::onBiometricsSettingClicked)
 //                        .build();
 
-        selectNetworksSetting =
-                new SettingsItemView.Builder(getContext())
-                        .withIcon(R.drawable.ic_share_grey)
-                        .withTitle(R.string.select_active_networks)
-                        .withListener(this::onSelectNetworksSettingClicked)
-                        .build();
+//        selectNetworksSetting =
+//                new SettingsItemView.Builder(getContext())
+//                        .withIcon(R.drawable.ic_share_grey)
+//                        .withTitle(R.string.select_active_networks)
+//                        .withListener(this::onSelectNetworksSettingClicked)
+//                        .build();
 
         advancedSetting =
                 new SettingsItemView.Builder(getContext())
@@ -207,8 +207,8 @@ public class NewSettingsFragment extends BaseFragment {
 
         if (biometricsSetting != null) systemSettingsLayout.addView(biometricsSetting, systemIndex++);
 
-        if (EthereumNetworkRepository.showNetworkFilters())
-            systemSettingsLayout.addView(selectNetworksSetting, systemIndex++);
+//        if (EthereumNetworkRepository.showNetworkFilters())
+//            systemSettingsLayout.addView(selectNetworksSetting, systemIndex++);
 
         systemSettingsLayout.addView(advancedSetting, systemIndex++);
 

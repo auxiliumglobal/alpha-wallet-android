@@ -70,6 +70,7 @@
         android:background="@color/mercury"/>
 
     <TextView
+        android:visibility="gone"
         android:id="@+id/watch_account_action"
         android:layout_width="match_parent"
         android:layout_height="60dp"

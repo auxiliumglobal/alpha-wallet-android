@@ -7,10 +7,6 @@ import com.alphawallet.app.entity.Wallet;
 import com.alphawallet.app.repository.TokenRepositoryType;
 
 import io.reactivex.Observable;
-import io.reactivex.Single;
-import io.reactivex.disposables.Disposable;
-
-import java.math.BigInteger;
 
 public class AddTokenInteract {
     private final TokenRepositoryType tokenRepository;

@@ -17,7 +17,6 @@ import com.alphawallet.token.entity.TicketRange;
 import com.bumptech.glide.Glide;
 import com.alphawallet.app.util.KittyUtils;
 
-import com.alphawallet.app.C;
 import com.alphawallet.app.R;
 import com.alphawallet.app.entity.tokens.Token;
 import com.alphawallet.app.ui.TokenDetailActivity;
@@ -29,8 +28,6 @@ import com.bumptech.glide.request.RequestListener;
 import com.bumptech.glide.request.target.Target;
 
 import java.math.BigInteger;
-import java.util.ArrayList;
-import java.util.Arrays;
 
 /**
  * Created by James on 3/10/2018.

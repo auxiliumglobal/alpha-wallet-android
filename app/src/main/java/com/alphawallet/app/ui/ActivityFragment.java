@@ -17,7 +17,6 @@ import com.alphawallet.app.R;
 import com.alphawallet.app.entity.ActivityMeta;
 import com.alphawallet.app.entity.ContractLocator;
 import com.alphawallet.app.entity.EventMeta;
-import com.alphawallet.app.entity.Transaction;
 import com.alphawallet.app.entity.TransactionMeta;
 import com.alphawallet.app.entity.Wallet;
 import com.alphawallet.app.entity.WalletPage;
@@ -38,8 +37,6 @@ import javax.inject.Inject;
 
 import dagger.android.support.AndroidSupportInjection;
 import io.realm.Realm;
-import io.realm.RealmChangeListener;
-import io.realm.RealmModel;
 import io.realm.RealmResults;
 
 import static com.alphawallet.app.repository.TokensRealmSource.EVENT_CARDS;

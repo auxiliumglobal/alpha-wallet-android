@@ -36,7 +36,6 @@ import org.web3j.crypto.Credentials;
 import org.web3j.crypto.Sign;
 import org.web3j.utils.Numeric;
 
-import io.reactivex.Completable;
 import wallet.core.jni.PrivateKey;
 import wallet.core.jni.*;
 

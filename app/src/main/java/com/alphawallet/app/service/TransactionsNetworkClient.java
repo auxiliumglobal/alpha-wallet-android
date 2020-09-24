@@ -2,29 +2,23 @@ package com.alphawallet.app.service;
 
 import android.content.Context;
 import android.text.TextUtils;
-import android.util.Log;
 
-import com.alphawallet.app.entity.ActivityMeta;
 import com.alphawallet.app.entity.TransactionMeta;
 import com.alphawallet.app.entity.Wallet;
 import com.alphawallet.app.entity.tokens.Token;
-import com.alphawallet.app.repository.TokensRealmSource;
 import com.alphawallet.app.repository.TransactionsRealmCache;
 import com.alphawallet.app.repository.entity.RealmToken;
 import com.alphawallet.app.repository.entity.RealmTransaction;
 import com.google.gson.Gson;
-import com.alphawallet.app.entity.ContractType;
 import com.alphawallet.app.entity.EtherscanTransaction;
 import com.alphawallet.app.entity.NetworkInfo;
 import com.alphawallet.app.entity.Transaction;
-import com.alphawallet.app.entity.TransactionContract;
 
 import org.json.JSONArray;
 import org.json.JSONException;
 import org.json.JSONObject;
 
 import java.io.InterruptedIOException;
-import java.math.BigInteger;
 import java.util.ArrayList;
 import java.util.List;
 

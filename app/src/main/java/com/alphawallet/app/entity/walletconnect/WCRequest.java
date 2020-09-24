@@ -1,6 +1,5 @@
 package com.alphawallet.app.entity.walletconnect;
 
-import com.alphawallet.app.ui.WalletConnectActivity;
 import com.alphawallet.app.walletconnect.entity.WCEthereumSignMessage;
 import com.alphawallet.app.walletconnect.entity.WCEthereumTransaction;
 import com.alphawallet.app.walletconnect.entity.WCPeerMeta;

@@ -1,6 +1,5 @@
 package com.alphawallet.app.util;
 
-import android.graphics.Typeface;
 import android.text.SpannableStringBuilder;
 import android.text.Spanned;
 import android.text.style.StyleSpan;

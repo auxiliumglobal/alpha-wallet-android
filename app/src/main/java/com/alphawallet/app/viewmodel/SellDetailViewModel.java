@@ -22,7 +22,6 @@ import com.alphawallet.app.service.AssetDefinitionService;
 import com.alphawallet.app.service.KeyService;
 import com.alphawallet.app.service.MarketQueueService;
 import com.alphawallet.app.ui.SellDetailActivity;
-import com.alphawallet.app.util.Utils;
 import com.alphawallet.token.entity.SalesOrderMalformed;
 import com.alphawallet.token.entity.SignableBytes;
 import com.alphawallet.token.tools.ParseMagicLink;

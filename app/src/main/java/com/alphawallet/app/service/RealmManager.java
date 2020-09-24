@@ -1,7 +1,6 @@
 package com.alphawallet.app.service;
 
 import com.alphawallet.app.BuildConfig;
-import com.alphawallet.app.entity.NetworkInfo;
 import com.alphawallet.app.entity.Wallet;
 
 import java.util.HashMap;

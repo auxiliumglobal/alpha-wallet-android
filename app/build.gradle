@@ -39,7 +39,7 @@ android {
         versionCode 127
         versionName "3.14.1-beta"
 
-        applicationId "io.stormbird.wallet"
+        applicationId "com.auxiliumwallet.app"
         minSdkVersion 23
         targetSdkVersion 29
         testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"

@@ -1,8 +1,6 @@
 package com.alphawallet.app.entity;
 
 
-import android.content.Context;
-
 import com.alphawallet.token.tools.Numeric;
 
 /**

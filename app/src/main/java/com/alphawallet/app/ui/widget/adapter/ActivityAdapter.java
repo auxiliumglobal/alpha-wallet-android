@@ -20,7 +20,6 @@ import com.alphawallet.app.entity.ActivityMeta;
 import com.alphawallet.app.entity.AdapterCallback;
 import com.alphawallet.app.entity.ContractLocator;
 import com.alphawallet.app.entity.EventMeta;
-import com.alphawallet.app.entity.Transaction;
 import com.alphawallet.app.entity.TransactionMeta;
 import com.alphawallet.app.entity.Wallet;
 import com.alphawallet.app.interact.ActivityDataInteract;

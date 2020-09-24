@@ -10,7 +10,6 @@ import com.alphawallet.app.repository.TransactionRepositoryType;
 import com.alphawallet.app.repository.WalletRepositoryType;
 import com.alphawallet.app.service.KeyService;
 import com.alphawallet.app.service.RealmManager;
-import com.alphawallet.app.service.WalletConnectService;
 import com.alphawallet.app.viewmodel.WalletConnectViewModelFactory;
 
 import dagger.Module;

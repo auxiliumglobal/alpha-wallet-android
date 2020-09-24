@@ -1,7 +1,6 @@
 package com.alphawallet.app.entity.tokens;
 
 import com.alphawallet.app.entity.ContractType;
-import com.alphawallet.app.repository.EthereumNetworkRepository;
 
 /**
  * Created by JB on 13/07/2020.

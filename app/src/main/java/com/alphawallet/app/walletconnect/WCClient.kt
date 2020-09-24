@@ -1,7 +1,6 @@
 package com.alphawallet.app.walletconnect
 
 import android.util.Log
-import com.alphawallet.app.util.Utils
 import com.alphawallet.app.walletconnect.entity.*
 import com.alphawallet.app.walletconnect.util.WCCipher
 import com.alphawallet.app.walletconnect.util.toByteArray

@@ -8,8 +8,6 @@ import android.support.annotation.NonNull;
 import android.support.v7.util.SortedList;
 import android.support.v7.widget.RecyclerView;
 import android.view.ViewGroup;
-import android.widget.Filter;
-import android.widget.Filterable;
 
 import com.alphawallet.app.R;
 import com.alphawallet.app.entity.TokenManageType;
@@ -28,8 +26,6 @@ import com.alphawallet.app.ui.widget.holder.TokenListHolder;
 
 import java.util.ArrayList;
 import java.util.Arrays;
-import java.util.Collections;
-import java.util.Comparator;
 import java.util.List;
 
 import io.reactivex.android.schedulers.AndroidSchedulers;

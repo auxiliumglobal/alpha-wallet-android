@@ -28,8 +28,6 @@ import com.alphawallet.app.entity.tokens.Token;
 import com.alphawallet.app.service.AssetDefinitionService;
 import com.alphawallet.app.widget.SignMessageDialog;
 
-import static com.alphawallet.app.ui.DappBrowserFragment.PERSONAL_MESSAGE_PREFIX;
-
 /**
  * Created by James on 3/04/2019.
  * Stormbird in Singapore

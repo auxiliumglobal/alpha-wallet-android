@@ -25,16 +25,12 @@ import com.alphawallet.app.service.TokensService;
 import com.alphawallet.app.ui.ConfirmationActivity;
 
 import org.web3j.protocol.Web3j;
-import org.web3j.protocol.core.methods.response.EthBlock;
 import org.web3j.protocol.core.methods.response.EthTransaction;
-import org.web3j.protocol.core.methods.response.Log;
 
-import java.io.IOException;
 import java.math.BigInteger;
 import java.util.concurrent.TimeUnit;
 
 import io.reactivex.Observable;
-import io.reactivex.Single;
 import io.reactivex.android.schedulers.AndroidSchedulers;
 import io.reactivex.disposables.Disposable;
 import io.reactivex.schedulers.Schedulers;

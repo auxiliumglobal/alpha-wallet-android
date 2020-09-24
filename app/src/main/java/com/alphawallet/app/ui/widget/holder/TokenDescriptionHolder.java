@@ -11,8 +11,6 @@ import com.alphawallet.app.R;
 import com.alphawallet.app.entity.tokens.Token;
 import com.alphawallet.app.service.AssetDefinitionService;
 
-import org.w3c.dom.Text;
-
 /**
  * Created by James on 12/02/2018.
  */

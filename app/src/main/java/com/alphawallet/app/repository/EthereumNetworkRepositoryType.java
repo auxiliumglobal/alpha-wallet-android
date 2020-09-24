@@ -4,8 +4,6 @@ import com.alphawallet.app.entity.ContractLocator;
 import com.alphawallet.app.entity.NetworkInfo;
 import com.alphawallet.app.entity.Wallet;
 import com.alphawallet.app.entity.tokens.Token;
-import com.alphawallet.app.entity.tokens.TokenTicker;
-import com.alphawallet.app.service.TokensService;
 
 import org.web3j.protocol.Web3j;
 

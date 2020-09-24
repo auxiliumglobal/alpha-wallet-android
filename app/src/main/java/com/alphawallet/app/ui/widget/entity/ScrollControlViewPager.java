@@ -8,8 +8,6 @@ import android.util.TypedValue;
 import android.view.MotionEvent;
 import android.view.ViewGroup;
 
-import com.alphawallet.app.util.Utils;
-
 /**
  * Created by James on 8/07/2019.
  * Stormbird in Sydney

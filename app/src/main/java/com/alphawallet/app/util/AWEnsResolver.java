@@ -6,7 +6,6 @@ import android.text.TextUtils;
 
 import com.alphawallet.app.C;
 import com.alphawallet.app.entity.UnableToResolveENS;
-import com.alphawallet.app.entity.Wallet;
 import com.google.gson.Gson;
 import com.google.gson.reflect.TypeToken;
 

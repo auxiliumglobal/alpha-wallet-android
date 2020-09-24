@@ -1,9 +1,6 @@
 package com.alphawallet.app.service;
 
-import com.alphawallet.app.repository.entity.RealmAuxData;
-
 import io.realm.DynamicRealm;
-import io.realm.DynamicRealmObject;
 import io.realm.FieldAttribute;
 import io.realm.RealmMigration;
 import io.realm.RealmObjectSchema;

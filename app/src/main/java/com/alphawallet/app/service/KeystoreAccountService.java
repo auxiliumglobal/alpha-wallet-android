@@ -17,9 +17,7 @@ import org.json.JSONObject;
 import org.web3j.crypto.*;
 import org.web3j.rlp.RlpEncoder;
 import org.web3j.rlp.RlpList;
-import org.web3j.rlp.RlpString;
 import org.web3j.rlp.RlpType;
-import org.web3j.utils.Bytes;
 import org.web3j.utils.Numeric;
 
 import java.io.File;

@@ -10,7 +10,6 @@ import com.alphawallet.app.interact.FindDefaultNetworkInteract;
 import com.alphawallet.app.interact.GenericWalletInteract;
 import com.alphawallet.app.service.KeyService;
 import com.alphawallet.app.service.RealmManager;
-import com.alphawallet.app.service.WalletConnectService;
 
 import javax.inject.Inject;
 

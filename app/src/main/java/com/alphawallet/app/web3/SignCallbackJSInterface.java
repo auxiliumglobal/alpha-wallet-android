@@ -1,8 +1,6 @@
 package com.alphawallet.app.web3;
 
 import android.support.annotation.NonNull;
-import android.text.SpannableString;
-import android.text.SpannableStringBuilder;
 import android.text.TextUtils;
 import android.webkit.JavascriptInterface;
 import android.webkit.WebView;
@@ -23,8 +21,6 @@ import org.json.JSONObject;
 
 import java.io.ByteArrayOutputStream;
 import java.math.BigInteger;
-import java.net.URI;
-import java.net.URISyntaxException;
 
 import wallet.core.jni.Hash;
 

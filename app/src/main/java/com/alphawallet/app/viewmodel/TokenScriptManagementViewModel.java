@@ -4,7 +4,6 @@ import android.arch.lifecycle.MutableLiveData;
 
 import com.alphawallet.app.entity.TokenLocator;
 import com.alphawallet.app.service.AssetDefinitionService;
-import com.alphawallet.app.service.TokensService;
 
 import java.util.List;
 

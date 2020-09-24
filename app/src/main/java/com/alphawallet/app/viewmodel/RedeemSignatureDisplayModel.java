@@ -3,7 +3,6 @@ package com.alphawallet.app.viewmodel;
 import android.app.Activity;
 import android.arch.lifecycle.LiveData;
 import android.arch.lifecycle.MutableLiveData;
-import android.content.Context;
 import android.os.NetworkOnMainThreadException;
 import android.support.annotation.Nullable;
 

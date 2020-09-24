@@ -6,7 +6,6 @@ import com.alphawallet.app.C;
 import com.alphawallet.app.entity.Wallet;
 import com.alphawallet.app.repository.EthereumNetworkRepository;
 import com.alphawallet.app.repository.EthereumNetworkRepositoryType;
-import com.alphawallet.app.repository.TokenRepository;
 import com.alphawallet.app.util.BalanceUtils;
 
 import io.reactivex.Observable;
@@ -20,7 +19,6 @@ import com.alphawallet.token.tools.Numeric;
 import org.web3j.protocol.Web3j;
 import org.web3j.protocol.core.methods.request.Transaction;
 import org.web3j.protocol.core.methods.response.EthEstimateGas;
-import org.web3j.protocol.core.methods.response.EthGasPrice;
 import org.web3j.tx.gas.ContractGasProvider;
 
 import java.math.BigDecimal;

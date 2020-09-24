@@ -22,7 +22,6 @@ import com.alphawallet.app.repository.entity.RealmAuxData;
 import com.alphawallet.app.service.AssetDefinitionService;
 import com.alphawallet.app.service.TokensService;
 import com.alphawallet.app.ui.TokenActivity;
-import com.alphawallet.app.ui.TokenFunctionActivity;
 import com.alphawallet.app.util.BalanceUtils;
 import com.alphawallet.app.util.LocaleUtils;
 import com.alphawallet.app.widget.TokenIcon;
@@ -37,7 +36,6 @@ import java.text.DateFormat;
 import java.util.Date;
 import java.util.Map;
 
-import static com.alphawallet.app.C.Key.TICKET;
 import static com.alphawallet.app.service.AssetDefinitionService.ASSET_SUMMARY_VIEW_NAME;
 import static com.alphawallet.app.ui.widget.holder.TransactionHolder.DEFAULT_ADDRESS_ADDITIONAL;
 

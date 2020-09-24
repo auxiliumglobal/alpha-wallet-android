@@ -6,7 +6,6 @@ import com.alphawallet.app.entity.ActivityMeta;
 import com.alphawallet.app.entity.ERC875ContractTransaction;
 import com.alphawallet.app.entity.EventMeta;
 import com.alphawallet.app.entity.TransactionMeta;
-import com.alphawallet.app.entity.tokens.Token;
 import com.alphawallet.app.entity.Transaction;
 import com.alphawallet.app.entity.TransactionContract;
 import com.alphawallet.app.entity.TransactionOperation;

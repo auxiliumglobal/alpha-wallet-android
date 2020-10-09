@@ -24,6 +24,7 @@ public class SupportSettingsActivity extends BaseActivity {
     private SettingsItemView facebook;
     private SettingsItemView blog;
     private SettingsItemView faq;
+    private SettingsItemView forum;
 
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
@@ -43,6 +44,12 @@ public class SupportSettingsActivity extends BaseActivity {
                 .withIcon(R.drawable.ic_logo_telegram)
                 .withTitle(R.string.telegram)
                 .withListener(this::onTelegramClicked)
+                .build();
+
+        forum = new SettingsItemView.Builder(this)
+                .withIcon(R.drawable.ic_baseline_forum_24)
+                .withTitle(R.string.forum)
+                .withListener(this::onForumClicked)
                 .build();
 
         twitter = new SettingsItemView.Builder(this)
@@ -70,7 +77,7 @@ public class SupportSettingsActivity extends BaseActivity {
                 .build();
 
         faq = new SettingsItemView.Builder(this)
-                .withIcon(R.drawable.ic_settings_faq)
+                .withIcon(R.drawable.ic_baseline_contact_support_24)
                 .withTitle(R.string.title_faq)
                 .withListener(this::onFaqClicked)
                 .build();
@@ -93,6 +100,9 @@ public class SupportSettingsActivity extends BaseActivity {
         if (MediaLinks.AWALLET_BLOG_URL != null) {
             supportSettingsLayout.addView(blog);
         }
+        if (MediaLinks.AWALLET_FORUM_URL != null) {
+            supportSettingsLayout.addView(forum);
+        }
         supportSettingsLayout.addView(faq);
     }
 
@@ -108,6 +118,19 @@ public class SupportSettingsActivity extends BaseActivity {
             Crashlytics.logException(e);
             e.printStackTrace();
         }
+    }
+    private void onForumClicked() {
+        Intent intent = new Intent(Intent.ACTION_VIEW);
+        intent.setData(Uri.parse(MediaLinks.AWALLET_FORUM_URL));
+//        if (isAppAvailable(C.TELEGRAM_PACKAGE_NAME)) {
+//            intent.setPackage(C.TELEGRAM_PACKAGE_NAME);
+//        }
+//        try {
+         startActivity(intent);
+//        } catch (Exception e) {
+//            Crashlytics.logException(e);
+//            e.printStackTrace();
+//        }
     }
 
     private void onLinkedInClicked() {

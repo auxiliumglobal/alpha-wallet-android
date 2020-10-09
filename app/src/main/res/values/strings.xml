@@ -273,6 +273,7 @@
     <string name="eth_00">0.00 ETH</string>
     <string name="toolbar_title_wallets">Change Wallet</string>
     <string name="facebook">Facebook</string>
+    <string name="forum">Forum</string>
     <string name="twitter">Twitter</string>
     <string name="erc20">ERC 20</string>
     <string name="erc875">ERC 875</string>
@@ -509,7 +510,7 @@
     <string name="back_up_now">Back up now!</string>
     <string name="key_secure">Do not share your key</string>
     <string name="lock_key_upgrade">Lock your seed phrase to increase security</string>
-    <string name="upgrade_key_security_detail">AlphaWallet security is being upgraded to the best achievable. Lock your seed phrase with biometrics.</string>
+    <string name="upgrade_key_security_detail">Auxilium Wallet security is being upgraded to the best achievable. Lock your seed phrase with biometrics.</string>
     <string name="action_upgrade_key">Upgrade key security</string>
     <string name="backup_wallet_detail">We highly recommend you back up your wallet.</string>
     <string name="skip_upgrade">Skip Upgrade</string>

@@ -13,7 +13,7 @@ public abstract class C {
     public static final int REQUEST_UNIVERSAL_SCAN = 1015;
 
     public static final String ETHEREUM_NETWORK_NAME = "Ethereum";
-    public static final String CLASSIC_NETWORK_NAME = "Ethereum Classic";
+    public static final String CLASSIC_NETWORK_NAME = "Auxilium";
     public static final String POA_NETWORK_NAME = "POA";
     public static final String XDAI_NETWORK_NAME = "xDai";
     public static final String KOVAN_NETWORK_NAME = "Kovan (Test)";

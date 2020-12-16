@@ -240,7 +240,7 @@ public class DappBrowserFragment extends Fragment implements OnSignTransactionLi
         attachFragment(currentFragment);
         if ((web3 == null || viewModel == null) && getActivity() != null) //trigger reload
         {
-            ((HomeActivity)getActivity()).resetFragment(WalletPage.DAPP_BROWSER);
+            //((HomeActivity)getActivity()).resetFragment(WalletPage.DAPP_BROWSER);
         }
         else
         {

@@ -75,6 +75,8 @@ public abstract class EthereumNetworkBase implements EthereumNetworkRepositoryTy
     public static final String BINANCE_TEST_FALLBACK_RPC_URL = "https://data-seed-prebsc-2-s1.binance.org:8545";
     public static final String BINANCE_MAIN_RPC_URL = "https://bsc-dataseed1.binance.org:443";
     public static final String BINANCE_MAIN_FALLBACK_RPC_URL = "https://bsc-dataseed2.ninicoin.io:443";
+    public static final String AUXILIUM_MAIN_RPC_URL = "https://rpc.auxilium.global:443";
+
 
     public static final int MAINNET_ID = 1;
     public static final int CLASSIC_ID = 61;
@@ -89,6 +91,8 @@ public abstract class EthereumNetworkBase implements EthereumNetworkRepositoryTy
     public static final int ARTIS_TAU1_ID = 246785;
     public static final int BINANCE_TEST_ID = 97;
     public static final int BINANCE_MAIN_ID = 56;
+    public static final int AUXILIUM_MAIN_ID = 28945486;
+
 
     final Map<Integer, NetworkInfo> networkMap;
 
@@ -96,12 +100,12 @@ public abstract class EthereumNetworkBase implements EthereumNetworkRepositoryTy
     static final NetworkInfo[] DEFAULT_NETWORKS = new NetworkInfo[] {
             new NetworkInfo(C.ETHEREUM_NETWORK_NAME, C.ETH_SYMBOL,
                     MAINNET_RPC_URL,
-                    "https://cn.etherscan.com/tx/",MAINNET_ID, true,
+                    "https://cn.etherscan.com/tx/",MAINNET_ID, false,
                     MAINNET_FALLBACK_RPC_URL,
                     "https://api-cn.etherscan.com/"),
             new NetworkInfo(C.CLASSIC_NETWORK_NAME, C.ETC_SYMBOL,
-                    CLASSIC_RPC_URL,
-                    "https://blockscout.com/etc/mainnet/tx/",CLASSIC_ID, true, CLASSIC_RPC_URL, "https://blockscout.com/etc/mainnet/"),
+                    AUXILIUM_MAIN_RPC_URL,
+                    "https://explore.auxilium.global/blockchain/transaction/",AUXILIUM_MAIN_ID, true, AUXILIUM_MAIN_RPC_URL, "https://blockscout.com/etc/mainnet/"),
             new NetworkInfo(C.XDAI_NETWORK_NAME,
                     C.xDAI_SYMBOL,
                     XDAI_RPC_URL,

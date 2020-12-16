@@ -132,14 +132,14 @@ public class HomeActivity extends BaseNavigationActivity implements View.OnClick
             @OnLifecycleEvent(Lifecycle.Event.ON_START)
             private void onMoveToForeground()
             {
-                Log.d("LIFE", "AlphaWallet into foreground");
+                Log.d("LIFE", "Auxilium Wallet into foreground");
                 ((WalletFragment)walletFragment).walletInFocus();
             }
 
             @OnLifecycleEvent(Lifecycle.Event.ON_STOP)
             private void onMoveToBackground()
             {
-                Log.d("LIFE", "AlphaWallet into background");
+                Log.d("LIFE", "Auxilium Wallet into background");
                 ((WalletFragment)walletFragment).walletOutOfFocus();
             }
 

@@ -14,7 +14,7 @@ import com.alphawallet.app.entity.WalletPage;
 import java.util.ArrayList;
 
 import static com.alphawallet.app.entity.WalletPage.ACTIVITY;
-import static com.alphawallet.app.entity.WalletPage.DAPP_BROWSER;
+//import static com.alphawallet.app.entity.WalletPage.DAPP_BROWSER;
 import static com.alphawallet.app.entity.WalletPage.SETTINGS;
 import static com.alphawallet.app.entity.WalletPage.WALLET;
 
@@ -53,16 +53,16 @@ public class AWalletBottomNavigationView extends LinearLayout {
 
         //TODO: Refactor with click overlay
         findViewById(R.id.wallet_tab).setOnClickListener(v -> selectItem(WALLET));
-        findViewById(R.id.browser_tab).setOnClickListener(v -> selectItem(DAPP_BROWSER));
+        //findViewById(R.id.browser_tab).setOnClickListener(v -> selectItem(DAPP_BROWSER));
         findViewById(R.id.settings_tab).setOnClickListener(v -> selectItem(SETTINGS));
         findViewById(R.id.activity_tab).setOnClickListener(v -> selectItem(ACTIVITY));
 
-        dappBrowser.setOnClickListener(v -> selectItem(DAPP_BROWSER));
+        //dappBrowser.setOnClickListener(v -> selectItem(DAPP_BROWSER));
         wallet.setOnClickListener(v -> selectItem(WALLET));
         settings.setOnClickListener(v -> selectItem(SETTINGS));
         activity.setOnClickListener(v -> selectItem(ACTIVITY));
 
-        dappBrowserLabel.setOnClickListener(v -> selectItem(DAPP_BROWSER));
+        //dappBrowserLabel.setOnClickListener(v -> selectItem(DAPP_BROWSER));
         walletLabel.setOnClickListener(v -> selectItem(WALLET));
         settingsLabel.setOnClickListener(v -> selectItem(SETTINGS));
         activityLabel.setOnClickListener(v -> selectItem(ACTIVITY));
@@ -80,10 +80,10 @@ public class AWalletBottomNavigationView extends LinearLayout {
         deselectAll();
         selectedItem = index;
         switch (index) {
-            case DAPP_BROWSER:
-                dappBrowser.setImageResource(R.drawable.ic_tab_browser_active);
-                dappBrowserLabel.setTextColor(getResources().getColor(R.color.colorHighlight, getContext().getTheme()));
-                break;
+//            case DAPP_BROWSER:
+//                dappBrowser.setImageResource(R.drawable.ic_tab_browser_active);
+//                dappBrowserLabel.setTextColor(getResources().getColor(R.color.colorHighlight, getContext().getTheme()));
+//                break;
             case WALLET:
                 wallet.setImageResource(R.drawable.ic_tab_wallet_active);
                 walletLabel.setTextColor(getResources().getColor(R.color.colorHighlight, getContext().getTheme()));
